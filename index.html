@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Four card feature section</title>
+  
+  <link href="/style/index.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css2?family=poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section>
+    <header>
+  <h1>Reliable, efficient delivery Powered by Technology</h1>
+
+  <p>Our Artificial Intelligence powered tools use millions of project data points 
+  to ensure that your project is successful</p>
+<section class="container">
+  <header class="header">
+  <h1 class="title"><span class="title-thin">Reliable, efficient delivery</span><br>Powered by Technology</h1>
+  <p class="deck-copy">Our Artificial Intelligence powered tools use millions of project data points 
+    to ensure that your project is successful</p> 
+  </header>
+  <ul>
+    <li>
+  
+  <h2>Supervisor</h2>
+  <p>Monitors activity to identify project roadblocks</p>
+  <img src="/images/icon-supervisor.svg" alt="Supervisor icon">
+  <ul class="card-list">
+    <li class="card card-cyan">
+      <h2 class="card-title">Supervisor</h2>
+      <p class="card-text">Monitor activity to identtify project roadblock</p>
+      <img class="card-icon" src="/image/icon-supervisor.svg" alt="Supervisor icon">
+    </li>
+<li>
+  <h2>Team Builder</h2>
+  <p>Scans our talent network to create the optimal team for your project</p>
+  <img src="/image/icon-team-builder.svg" alt="Team builder icon">
+    <li class= "card card-red">
+      <h2 class= "card-title">Team Builder</h2>
+      <p class="card-text">Scans our talent network to create the optimal team for your project</p>
+      <img class="card-icon" src="/image/icon-team-builder.svg" alt="Team builder icon">
+    </li>
+<li>
+  <h2>Karma</h2>
+  <p>Regularly evaluates our talent to ensure quality</p>
+  <img src="/image/icon-karma.svg" alt="Karma icon">
+  <li class= "card card-yellow">
+    <h2 class="class-title">Karma</h2>
+    <p class="class-text">Regularly evaluates our talent to ensure quality</p>
+    <img class="card-icon" src="/image/icon-karma.svg" alt="Karma icon">
+  </li>
+
+<li>
+  <h2>Calculator</h2>
+  <p>Uses data from past projects to provide better delivery estimates</p>
+  <img src="/image/icon-calculator.svg" alt="Calculator icon">
+  <li class= "card card-blue">
+    <h2 class= "class-title">Calculator</h2>
+    <p class="class-text">Uses data from past projects to provide better delivery estimates</p>
+    <img class="card-icon" src="image/icon-calculator.svg" alt="Calculator icon">  
+  </li>
+</ul>
+
+  <footer>
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Bidex284-design</a>
+     <footer class="footer">
+      <p class="attribution">
+      Challenge by<a class="attribution-link"href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+     <br>
+      Coded by <a class="attribution-link" href="#">Bidex284-design</a>
+      Coded by <a class="attribution-link" href="https://www.frontendmentor.io/profile/bidex284-design"target="_blank">Bidemi</a>.
+    </p>
+  </footer>
+</body>
+</html>
+
+<style>
+html {
+  height: 100%;
+  box-sizing: border-box;
+
+  font-size: 62.5%; /* make 1rem = 10px for comfortable px => rem conversions */
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+
+  font-size: 1.6rem; /* set body font-size back to 16px */
+}
+
+/* Main Styles */
+body {
+  color: hsl(229, 6%, 66%);
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+
+  background-color: hsl(0, 0%, 98%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  padding: 0 0.5rem;
+}
+
+.header {
+  max-width: 35rem;
+  margin: 8.5rem auto 8rem;
+
+  text-align: center;
+}
+
+.title {
+  letter-spacing: 0.1rem;
+}
+
+.title-thin {
+  font-weight: 200;
+}
+
+.deck-copy {
+  margin-top: 2rem;
+}
+
+.card-list {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 2.7rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem 3rem;
+  min-width: 30.5rem;
+  width: 100%;
+  max-width: 35rem;
+
+  border-radius: 0.5rem;
+  border-top: 0.3rem solid transparent;
+
+  background-color: hsl(0, 0%, 100%);
+
+  box-shadow: 0 1.5rem 3rem -1.5rem hsla(202, 37%, 67%, 0.75);
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 1.275rem;
+  letter-spacing: 0.025rem;
+  line-height: 1.75;
+}
+
+.card-icon {
+  align-self: flex-end;
+  width: 5.6rem;
+  height: 5.6rem;
+  margin-top: 3.0rem;
+}
+
+.card-cyan {
+  border-top-color: hsl(180, 62%, 55%);
+}
+
+.card-red {
+  border-top-color: hsl(0, 78%, 62%);
+}
+
+.card-yellow {
+  border-top-color: hsl(34, 97%, 64%);
+}
+
+.card-blue {
+  border-top-color: hsl(212, 86%, 64%);
+}
+
+.footer {
+  margin: 2.5rem 0 2rem;
+
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.attribution-link:visited {
+  color: hsl(240, 100%, 15%);
+}
+
+/* Mobile breakpoint used in style guide - 375px */
+@media screen and (min-width: 23.4375rem) {
+  .container {
+    padding: 0 3.5rem;
+  }
+}
+
+/* Custom breakpoint - 700px */
+@media screen and (min-width: 43.75rem) {
+  .header {
+    max-width: 40rem;
+  }
+
+  .card-list {
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 2rem;
+  }
+}
+
+/* Custom breakpoint - 1100px */
+@media screen and (min-width: 68.75rem) {
+  .container {
+    padding: 0 5rem;
+  }
+
+  .header {
+    max-width: 50.5rem;
+    margin-top: 8rem;
+    margin-bottom: 6.5rem;
+  }
+
+  .title {
+    font-size: 3.375rem;
+    letter-spacing: 0.125rem;
+  }
+
+  .card-list {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 3rem;
+  }
+
+  .card {
+    padding: 3rem 3rem 3.5rem;
+  }
+
+  .card-icon {
+    width: 6.4rem;
+    height: 6.4rem;
+    margin-top: 4rem;
+  }
+
+  .card:first-of-type, .card:last-of-type {
+    grid-row: 1 / 3;
+  }
+
+  .card:first-of-type {
+    grid-column: 1;
+  }
+
+  .card:last-of-type {
+    grid-column: 3;
+  }
+}
+</style>
